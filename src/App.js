@@ -1,14 +1,18 @@
-import Top from './Top';
 import Bottom from './Bottom';
+import './App.css';
 
+// Note: footer would not be an appropriate substitute for Bottom
 function App() {
   return (
     <>
-      <Top className="App">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </Top>
+      <main>
+        <h1>Reflow Demo</h1>
+        <ol>
+          <li>Decrease your resolution to 1280x1024</li>
+          <li>Zoom to 400%</li>
+          <li>What do you see?</li>
+        </ol>
+      </main>
       <Bottom/>
     </>
   );
