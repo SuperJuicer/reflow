@@ -1,12 +1,16 @@
-import './App.css';
+import Top from './Top';
+import Bottom from './Bottom';
 
 function App() {
   return (
-    <div className="App">
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-    </div>
+    <>
+      <Top className="App">
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+      </Top>
+      <Bottom/>
+    </>
   );
 }
 

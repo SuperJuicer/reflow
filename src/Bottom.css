@@ -1,0 +1,6 @@
+.bottom {
+    min-height: 30vh;
+    box-sizing: border-box;
+    border-top: 1px solid white;
+    background-color: darkblue;
+}
