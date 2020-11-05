@@ -1,7 +1,7 @@
 import './Bottom.css';
 
 const Bottom = () => {
-    return <div className='bottom'></div>;
+    return <div></div>;
 };
 
 export default Bottom;
