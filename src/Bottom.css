@@ -1,6 +1,22 @@
-div {
+.bottom {
     height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     border-top: 1px solid white;
     background-color: darkblue;
+}
+
+.grid {
+    height: 100px;
+    width: 80%;
+    /* Fixed positioning is a requirement of a React API */
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: purple;
 }
