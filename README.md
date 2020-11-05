@@ -1,6 +1,8 @@
 # reflow
 Reflow is a demo app for meeting the WCAG's [Success Criterion 1.4.10](https://www.w3.org/TR/WCAG21/#reflow).
 
+<br>
+
 ## Supported Platforms
 
 - Windows 10
@@ -14,8 +16,6 @@ I have not tested this app in other platforms.
 - [Edge](https://www.microsoft.com/edge/download)
 
 - [Firefox](https://www.mozilla.org/en-US/firefox/windows/) 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 <hr>
 

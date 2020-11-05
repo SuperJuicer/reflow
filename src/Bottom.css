@@ -1,0 +1,6 @@
+div {
+    height: 150px;
+    box-sizing: border-box;
+    border-top: 1px solid white;
+    background-color: darkblue;
+}

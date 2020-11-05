@@ -1,4 +1,6 @@
 import App from './App';
+import Bottom from './Bottom';
+import Top from './Top';
 import { shallow } from 'enzyme';
 
 it('should render successfully', () => {
@@ -7,7 +9,6 @@ it('should render successfully', () => {
 
   // Assert
   expect(wrapper).toMatchSnapshot();
-  expect(wrapper.find('div').length).toEqual(1);
-  expect(wrapper.find('p').length).toEqual(1);
-  expect(wrapper.find('code').length).toEqual(1);
+  expect(wrapper.find(Top).length).toEqual(1);
+  expect(wrapper.find(Bottom).length).toEqual(1);
 });

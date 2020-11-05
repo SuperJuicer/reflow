@@ -1,12 +1,13 @@
-import './App.css';
+import Bottom from './Bottom';
+import Top from './Top';
 
+// Note: footer would not be an appropriate substitute for Bottom
 function App() {
   return (
-    <div className="App">
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-    </div>
+    <>
+      <Top/>
+      <Bottom/>
+    </>
   );
 }
 
