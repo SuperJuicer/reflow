@@ -1,40 +1,28 @@
+import React, { useEffect, useState } from 'react';
 import Bottom from './Bottom';
 import Top from './Top';
-import React, {useState, useRef} from 'react';
+// import React, {useState, useRef} from 'react';
 
 function App() {
 
-  // We'll need a reference to the App to eventually pass scrollTop to grid
-  // for positioning when App is scrolled vertically.
-  const appRef = useRef(null);
-  const [scrollTop, setScrollTop] = useState(0);
-  function setScrollTopHandler() {
-    setScrollTop(
-      appRef
-        ? appRef.current
-          ? appRef.current.scrollTop
-          : 0
-        : 0
-    );
-  }
+  // We'll need a reference to pass the yOffset to the grid eventually  
+  const [yOffset, setYOffset] = useState(0);
+  useEffect(() => {
+    window.onscroll = () => {
+      setYOffset(window.pageYOffset)
+    }
+  }, []);
 
-  console.log('appRef = ');
-  console.log(appRef);
-  console.log('appRef.current = ');
-  console.log(appRef.current);
-  console.log('appRef.current.scrollTop = ');
-  if (appRef.current) console.log(appRef.current.scrollTop);
-  console.log('scrollTop = ' + scrollTop);
-  console.log('-scrollTop = ' + -scrollTop);
+  console.log(-yOffset); 
 
-  // Note: footer would not be an appropriate substitute for Bottom
   return (
-    <div ref={appRef} onScroll={setScrollTopHandler}>
+    // Note: footer would not be an appropriate substitute for Bottom
+    <div>
       <Top/>
       <Bottom 
-        // Will pass -scrollTop eventually to fixed-positioned grid
+        // Will pass -yOffset eventually to fixed-positioned grid
         // to change its position while scrolling vertically.
-        style={{marginTop: -scrollTop}}
+        style={{marginTop: -yOffset}}
       />
     </div>
   );
