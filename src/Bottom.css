@@ -11,7 +11,7 @@
 .grid {
     height: 100px;
     width: 80%;
-    /* Fixed positioning is a requirement of a React API */
+    /* Fixed positioning is a requirement of a React API, which is not used in this demo. */
     position: fixed;
     display: flex;
     align-items: center;
