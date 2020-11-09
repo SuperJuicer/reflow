@@ -1,6 +1,11 @@
 import './Top.css';
 
+/**
+ * Presentational component, responsible for rendering the Top of the app,
+ * which includes the level 1 heading and the ordered list
+ */
 const Top = () => {
+
   return (
     <main>
       <h1>Reflow Demo</h1>

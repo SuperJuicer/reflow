@@ -1,15 +1,17 @@
-import React from 'react';
 import './Bottom.css';
 
+/**
+ * Presentational component, responsible for rendering the Bottom of the app,
+ * which includes the fixed position grid.
+ *
+ * @param props
+ */
 const Bottom = (props) => {
-    console.log(props);
-// console.log(props.marginTop); undefined
-console.log(props.style);
 
     return (
         <div className='bottom'>
-            <div className='grid' style={props.style} /*style={{marginTop: props.marginTop}}*/>
-                <h2>Fixed position grid</h2>
+            <div className='grid' style={props.style}>
+                <h2>Fixed pos grid</h2>
             </div>
         </div>
     );
