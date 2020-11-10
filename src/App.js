@@ -25,7 +25,7 @@ function App() {
       <Bottom 
         // Will pass -yOffset eventually to fixed-positioned grid
         // to change its position while scrolling vertically.
-        style={{marginTop: -yOffset + 25}}
+        marginTop={-yOffset + 25}
       />
     </>
   );

@@ -10,7 +10,7 @@
 .grid {
     height: 100px;
     width: 80%;
-    /* Fixed positioning is a requirement of an API, which is not used in this demo. */
+    /* Fixed positioning is a requirement of an API that is not used in this demo. */
     position: fixed;
     display: flex;
     align-items: center;
